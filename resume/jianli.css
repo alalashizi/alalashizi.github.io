@@ -44,26 +44,34 @@ width:609px;
 /*	width:649px;*/
 width:609px;
 	height:15px;
-	margin-top:80px;
+	/*margin-top:80px;*/
 }
 
 .center{
-	margin-top: 30px;
+	margin-top: 20px;
 	margin-left:40px;
 /*	width:649px;*/
 width:609px;
 }
+.center h1{
+	/*color: LightCoral;*/
+	text-align: center;
+}
 .info h3{
+	margin-top: 3px;
 	color: LightCoral;
     display: inline-block;
 }
 .center .word{
-	height:150px;
+	height:200px;
 	width:420px;
 /*	border:1px solid red;*/
 	margin-top: 3px;
     display: inline-block;
-    line-height: 25px;
+    line-height: 28px;
+}
+.center .word a{
+	color:LightCoral;
 }
 .center .photo{
 	height:100px;
@@ -84,13 +92,14 @@ width:609px;
 	width:500px;
 /*	border:1px solid red;*/
 	margin-top: 3px;
-    line-height: 25px;
+    line-height: 28px;
 }
-.center .word-award ul{
-	margin-left: 20px;
+
+.center .word-award ul li{
+	list-style-type: none;
 }
 .skill {
-	margin-top: 12px;
+	margin-top: 16px;
 }
 .skill h3{
 	color: LightCoral;
@@ -101,10 +110,10 @@ width:609px;
 	width:500px;
 /*	border:1px solid red;*/
 	margin-top: 3px;
-    line-height: 25px;
+    line-height: 28px;
 }
 .self {
-	margin-top: 12px;
+	margin-top: 7px;
 }
 .self h3{
 	color: LightCoral;
@@ -115,5 +124,5 @@ width:609px;
 	width:500px;
 /*	border:1px solid red;*/
 	margin-top: 3px;
-    line-height: 25px;
+    line-height: 28px;
 }
