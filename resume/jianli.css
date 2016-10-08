@@ -112,6 +112,23 @@ width:609px;
 	margin-top: 3px;
     line-height: 28px;
 }
+.show{
+	margin-top: 3px;
+}
+.show h3{
+	color: LightCoral;
+    display: inline-block;
+}
+.show .show-skill{
+	margin-top: 3px;
+    line-height: 28px;
+}
+.show .show-skill ul li{
+	list-style-type: none;
+}
+.show .show-skill a{
+	color:LightCoral;
+}
 .self {
 	margin-top: 7px;
 }

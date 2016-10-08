@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>多功能对话框</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="alert.css">
+</head>
+
+<body>
+    <p>以下所有对话框都可进行拖拽，点击鼠标右键可关闭，Google浏览器下按下Esc键可关闭对话框</p><br/>
+    <button onclick="showDialog({msg:'多功能对话框',key:'right',color:'blue',btnStyle:[{name:'yes',action:function(obj){obj.closeDialog();}}]});">蓝色right</button>
+    <button onclick="showDialog({msg:'多功能对话框',title:'alert',btnStyle:[{name:'yes',action:function(obj){obj.closeDialog();}}],key:'error',color:'blue'});">蓝色error</button>
+    <button onclick="showDialog({msg:'多功能对话框',title:'alert',btnStyle:[{name:'yes',action:function(obj){obj.closeDialog();}}],key:'warn',color:'blue'});">蓝色warn</button>
+    <br/>
+    <br/>
+    <button onclick="showDialog({msg:'多功能对话框',title:'alert',btnStyle:[{name:'yes',action:function(obj){obj.closeDialog();}}],key:'right',color:'gray'});">经典right</button>
+    <button onclick="showDialog({msg:'多功能对话框',title:'alert',btnStyle:[{name:'yes',action:function(obj){obj.closeDialog();}}],key:'error',color:'gray'});">经典error</button>
+    <button onclick="showDialog({msg:'多功能对话框',title:'alert',btnStyle:[{name:'yes',action:function(obj){obj.closeDialog();}}],key:'warn',color:'gray'});">经典warn</button>
+    <br/>
+    <br/>
+    <button onclick="showDialog({msg:'多功能对话框',title:'alert',btnStyle:[{name:'yes',action:function(obj){obj.closeDialog();}}],key:'right',color:'green'});">清新right</button>
+    <button onclick="showDialog({msg:'多功能对话框',title:'alert',btnStyle:[{name:'yes',action:function(obj){obj.closeDialog();}}],key:'error',color:'green'});">清新error</button>
+    <button onclick="showDialog({msg:'多功能对话框',title:'alert',btnStyle:[{name:'yes',action:function(obj){obj.closeDialog();}}],key:'warn',color:'green'});">清新warn</button>
+    <br/>
+     <br/>
+    <button onclick="showDialog({msg:new Array(200).fill('多功能对话框').join(',')})">对话框中内容较多时</button>
+    <br/> <br/>
+    <button onclick="showDialog({msg:'<span>陌上花开 可缓缓归矣</span>',title:'alert',btnStyle:[{name:'yes',action:function(obj){obj.closeDialog();}}],key:'warn',color:'green'});">添加html内容</button>
+    <br/> <br/>
+    <button onclick="showDialog({msg:'多功能对话框',title:'alert',btnStyle:[{name:'yes',action:function(obj){obj.closeDialog();}}],key:'right',color:'green',oStyle:{dialog: 'border:10px solid pink;', title: 'font-weight: bold; color: red;'}});">自定义样式</button>
+    <button onclick="showDialog({msg:'多功能对话框',title:'alert',btnStyle:[{name:'yes',action:function(obj){obj.closeDialog();}},{name:'no',action:function(obj){obj.background.remove();}},{name:'取消',action:function(obj){obj.dialog.remove();}}],key:'warn',color:'green'});">自定义按钮</button>
+    <button id="btn_multi_dialog">自定义个数对话框</button>
+    <script type="text/javascript" src="alert.js"></script>
+    <script type="text/javascript">
+    document.querySelector('#btn_multi_dialog').addEventListener('click', function(evt) {
+        showDialog({
+            msg: '春江潮水连海平',
+            title: 'alert',
+            btnStyle: [{
+                name: 'yes',
+                action: function(obj) {
+                    obj.closeDialog();
+                }
+            }, {
+                name: 'Next',
+                action: function(obj) {
+                    showDialog({
+                        msg: '海上明月共潮生',
+                        title: 'alert',
+                        btnStyle: [{
+                            name: 'yes',
+                            action: function(obj) {
+                                obj.closeDialog();
+                            }
+                        }, {
+                            name: 'Next',
+                            action: function(obj) {
+                                showDialog({
+                                    msg: '滟滟随波千万里',
+                                    title: 'alert',
+                                    btnStyle: [{
+                                        name: 'yes',
+                                        action: function(obj) {
+                                            obj.closeDialog();
+                                        }
+                                    }, {
+                                        name: 'Next',
+                                        action: function(obj) {
+                                            showDialog({
+                                                msg: '何处春江无月明',
+                                                title: 'alert',
+                                                btnStyle: [{
+                                                    name: 'yes',
+                                                    action: function(obj) {
+                                                        obj.closeDialog();
+                                                    }
+                                                }, {
+                                                    name: 'End',
+                                                    action: function(obj) {
+                                                        alert('There is no more!');
+                                                    }
+                                                }],
+                                                key: 'warn',
+                                                color: 'green'
+                                            });
+                                        }
+                                    }],
+                                    key: 'warn',
+                                    color: 'green'
+                                });
+                            }
+                        }],
+                        key: 'warn',
+                        color: 'green'
+                    });
+                }
+            }],
+            key: 'warn',
+            color: 'green'
+        });
+    }, false);
+    </script>
+</body>
+
+</html>
