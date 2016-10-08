@@ -75,11 +75,13 @@ width:609px;
 	color:LightCoral;
 }
 .center .photo{
-	height:100px;
-	width:100px;
-	margin-right:60px;
-	border:1px solid green;
+	height:127px;
+	width:88px;
+	margin-right:65px;
+	margin-top: 23px;
+	/*border:1px solid green;*/
     float:right;
+    background-image: url(photo.jpg);
 }
 .award {
 	margin-top: 12px;
