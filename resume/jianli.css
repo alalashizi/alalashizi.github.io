@@ -14,12 +14,13 @@ font-family: Helvetica, 'Hiragino Sans GB',
 
 .total{
 	position: absolute;
-/*	width:689px;*/
-    width:649px;
+
+    /*width:649px;*/
+    width:629px;
 	height:890px;
 	border:1px solid LightGrey;
 	top:20px;
-	/*left:349px;*/
+	
 }
 
 .left{
@@ -30,8 +31,8 @@ font-family: Helvetica, 'Hiragino Sans GB',
 	position: absolute;
 }
 .right{
-/*	width:649px;*/
-width:609px;
+/*	width:609px;*/
+width:589px;
 	height:30px;
 	background-color: LightCoral;
 	margin-top: 20px;
@@ -41,8 +42,8 @@ width:609px;
 .footer{
 	background-color: LightCoral;
 	margin-left:40px;
-/*	width:649px;*/
-width:609px;
+/*	width:609px;*/
+width:589px;
 	height:15px;
 	margin-top:-8px;
 }
@@ -50,8 +51,8 @@ width:609px;
 .center{
 	margin-top: 20px;
 	margin-left:40px;
-/*	width:649px;*/
-width:609px;
+/*	width:609px;*/
+width:589px;
 
 }
 .center h1{
