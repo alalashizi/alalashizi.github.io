@@ -121,7 +121,7 @@ body {
 .show .show-skill{
 	margin-top: 3px;
 	line-height: 28px;
-	width: 500px;
+	width: 555px;
 	height:140px;
 }
 .show .show-skill ul li{
@@ -139,7 +139,7 @@ body {
 }
 .self .word-self{
 	height:130px;
-	width:500px;
+	width:555px;
 	margin-top: 3px;
 	line-height: 28px;
 }
