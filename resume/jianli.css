@@ -15,7 +15,7 @@ body {
 	position: absolute;
 	/*width:649px;*/
 	width:649px;
-	height:890px;
+	height:1040px;
 	border:1px solid LightGrey;
 	top:20px;	
 }
@@ -42,7 +42,7 @@ body {
 		width:609px;
 	/*width:589px;*/
 	height:15px;
-	margin-top:-10px;
+	margin-top:-20px;
 }
 
 .center{
@@ -103,7 +103,7 @@ body {
 	display: inline-block;
 }
 .skill .word-skill{
-	height:30px;
+	height:115px;
 	width:500px;
 	margin-top: 3px;
 	line-height: 28px;
@@ -122,7 +122,7 @@ body {
 	margin-top: 3px;
 	line-height: 28px;
 	width: 500px;
-	height:59px;
+	height:140px;
 }
 .show .show-skill ul li{
 	list-style-type: none;
