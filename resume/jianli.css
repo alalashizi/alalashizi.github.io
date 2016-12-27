@@ -14,7 +14,7 @@ body {
 .total{
 	position: absolute;
 	/*width:649px;*/
-	width:629px;
+	width:649px;
 	height:890px;
 	border:1px solid LightGrey;
 	top:20px;	
@@ -28,8 +28,8 @@ body {
 	position: absolute;
 }
 .right{
-	/*	width:609px;*/
-	width:589px;
+		width:609px;
+	/*width:589px;*/
 	height:30px;
 	background-color: LightCoral;
 	margin-top: 20px;
@@ -39,8 +39,8 @@ body {
 .footer{
 	background-color: LightCoral;
 	margin-left:40px;
-	/*	width:609px;*/
-	width:589px;
+		width:609px;
+	/*width:589px;*/
 	height:15px;
 	margin-top:-10px;
 }
@@ -73,7 +73,7 @@ body {
 .center .photo{
 	height:127px;
 	width:88px;
-	margin-right:65px;
+	margin-right:37px;
 	margin-top: 23px;
 	float:right;
 	background-image: url(photo.jpg);
@@ -87,7 +87,7 @@ body {
 }
 .center .word-award{
 	height:130px;
-	width:500px;
+	width:700px;
 	margin-top: 3px;
 	line-height: 28px;
 }
@@ -107,6 +107,9 @@ body {
 	width:500px;
 	margin-top: 3px;
 	line-height: 28px;
+}
+.word-skill hr{
+	border:0;
 }
 .show{
 	margin-top: 3px;
