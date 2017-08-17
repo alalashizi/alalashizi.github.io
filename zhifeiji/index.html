@@ -19,7 +19,7 @@
 		}
 		.site-zfj i{
 			position: absolute;
-			top:80px;
+			top:70px;
 			height:200px;
 			width: 200px;
 			margin-left: -100px;			
@@ -60,25 +60,40 @@
 			height: 92px;
 			position: absolute;
 			left: 40.5%;	
-			top: 320px;
+			top: 290px;
 		}
 		.site-desc-anim{
 			animation-name: desc-anim;
 			animation-duration: : 0.3s;
-			/*animation-timing-function: linear;*/
 			animation-fill-mode: both;
 			-webkit-animation-name: desc-anim;
 			-webkit-animation-duration: 0.3s;
 			-webkit-animation-fill-mode: both;
-			/*-webkit-animation-timing-function: linear;*/
 		}
 		@keyframes desc-anim{
-			0%{transform: scale(1.1);}
+			0%{transform: scale(1.4);}
 			100%{transform: scale(1);}
 		}
 		@-webkit-keyframes desc-anim{
-			0%{transform: scale(1.5);}
+			0%{transform: scale(1.4);}
 			100%{transform: scale(1);}
+		}
+		.txt{
+			width: 350px;
+			height:90px;
+			border:1px solid #d2d2d2;
+			font-size: 16px;
+			padding:20px;
+			position: absolute;
+			top:70%;
+			left: 35%;
+			color: rgba(255,255,255,0.7);
+			cursor: pointer;
+			text-align: center;
+			transition: all .5s;
+		}
+		.txt:hover{
+			border-radius: 50px;			
 		}
 	</style>
 </head>
@@ -88,6 +103,7 @@
 		<i class="layui-icon" style="color:rgba(255,255,255,0.7);">&#xe609;</i>
 	</div>
 	<div class="logo "></div>	
+	<div class="txt">如果眼下还是一团零星之火，那运筹帷幄之后，迎面东风，就是一场烈焰燎原吧，那必定会是一番尽情的燃烧。待，秋风萧瑟时，散作满天星辰，你看那四季轮回，正是Layui不灭的执念。</div>
 </div>
 
 <script type="text/javascript">
