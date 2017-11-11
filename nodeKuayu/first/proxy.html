@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>alalashizi</title>
+	<script src="jquery-3.2.1.js"></script>
+</head>
+<body>
+
+<!-- 通过ajax请求获取  http://testapi.jihes.com/goods/activity?os_type=1&os_version=10.2&app_version=1.0.0&api_version=2.0.0 &device_name=myphone&client_id=83a14e030ad94096b4cdbfc2a94dc203 接口的数据 -->
+
+
+<script type="text/javascript">
+
+	$(function () {
+
+		$.ajax({
+			type:'GET',		
+			url:'http://localhost:3000/goods/activity',
+			dataType: 'json',
+			data: {
+				os_type: '1',
+				os_version: '10.2',
+				app_version: '1.0.0',
+				pi_version: '2.0.0',
+				device_name: 'myphone',
+				client_id: '83a14e030ad94096b4cdbfc2a94dc203'
+			},	
+	    success:function(data){
+	    	console.log(data);	    
+	    },
+	    error:function(data){
+	    	console.log('error', data);
+	    }
+		}); 
+
+	});
+
+</script>
+</body>
+</html>
